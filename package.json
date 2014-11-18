@@ -1,36 +1,40 @@
 {
-  "name": "ewalnet-docpad",
-  "version": "1.0.0",
-  "description": "Source for www.ewal.net",
-  "author": "Erv Walter <erv@ewal.net>",
+  "name": "pencilcode-blog",
+  "version": "0.0.1",
+  "description": "Source for blog.pencilcode.net",
+  "author": "David Bau <david.bau@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ervwalter/ewalnet-docpad.git"
+    "url": "https://github.com/PencilCode/blog.git"
   },
   "license": "MIT",
   "dependencies": {
+    "docpad": "~6.69.0",
+
     "docpad": "~6.64.0",
     "cheerio": "~0.13.1",
     "moment": "~2.5.1",
-    "docpad-plugin-marked": "~2.2.0",
-    "docpad-plugin-eco": "~2.0.3",
+    "docpad-plugin-marked": "~2.2.1",
+    "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-less": "~2.4.1",
-    "docpad-plugin-coffeescript": "~2.3.0",
+    "docpad-plugin-coffeescript": "~2.4.0",
     "docpad-plugin-sitemap": "~2.2.0",
-    "docpad-plugin-partials": "~2.9.0",
+    "docpad-plugin-partials": "~2.9.1",
     "docpad-plugin-cleanurls": "~2.7.0",
     "docpad-plugin-tags": "~2.0.7",
-    "docpad-plugin-dateurls": "https://github.com/ervwalter/docpad-plugin-dateurls/tarball/compiled",
+    "docpad-plugin-dateurls": "~2.4.0",
     "docpad-plugin-paged": "https://github.com/ervwalter/docpad-plugin-paged/tarball/compiled",
     "docpad-plugin-livereload": "~2.6.0"
   },
   "devDependencies": {},
   "engines": {
     "node": "0.10",
-    "npm": "1.3"
+    "npm": "1.4"
   },
   "main": "./node_modules/docpad/bin/docpad-server",
   "scripts": {
-    "start": "node ./node_modules/docpad/bin/docpad-server"
+    "start": "node ./node_modules/docpad/bin/docpad-server",
+    "generate": "node_modules/docpad/bin/docpad generate --env static",
+    "devserver": "node_modules/docpad/bin/docpad run"
   }
 }

@@ -10,16 +10,16 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://www.ewal.net"
+			url: "http://blog.pencilcode.net"
 
 			# The default title of our website
-			title: "Ewal.net"
+			title: "Pencil Code Blog"
 
 			# The website author's name
-			author: "Erv Walter"
+			author: "Pencil Code Foundation"
 
 			# The website author's email
-			email: "erv@ewal.net"
+			email: "info@pencilcode.net"
 
 			# cache-busting timestamp
 			timestamp: new Date().getTime()
@@ -66,10 +66,10 @@ docpadConfig = {
 		moment: require('moment')
 
 		# Discus.com settings
-		disqusShortName: 'ewalnet'
+		disqusShortName: 'pencilcode'
 
 		# Google+ settings
-		googlePlusId: '103974853049200513652'
+		# googlePlusId: '?????'
 
 		getTagUrl: (tag) ->
 			slug = tag.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')

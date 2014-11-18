@@ -1,8 +1,17 @@
-# Ewal.net
+# Pencil Code Blog
 
-This is the source for the [DocPad-based](http://docpad.org) blog hosted at [www.ewal.net](http://www.ewal.net).  For more information, see [this blog post](http://www.ewal.net/2013/10/08/blogging-with-docpad/).
+This is the source for the blog to be hosted at
+[blog.pencilcode.net](http://blog.pencilcode.net).
+It is based on the docpad blog infrastrucure generously
+opened for reuse by
+[Erv Walter](http://www.ewal.net/2013/10/08/blogging-with-docpad/).
 
-## License
+## Original License
+Copyright (c) 2014 Pencil Code
+
+Open under the same license terms as the original by Erv Walter.
+
+## Original License
 Copyright (c) 2013 Erv Walter
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

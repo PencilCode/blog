@@ -23,4 +23,4 @@ pagePathPrefix: page
     <div class="page-nav-archives"><a href="/archives/">- Blog Archives -</a></div>
 </div>
 
-<%- @partial('me') %>
+<%- @partial('us') %>

@@ -1,0 +1,24 @@
+<script src="//cdn.livefyre.com/Livefyre.js"></script>
+<div id="livefyre"><noscript>Please enable JavaScript to view the <a href="http://web.livefyre.com/comments/">comments powered by Livefyre.</a></noscript></div>
+<script type="text/javascript">
+(function() {
+  var networkConfig = {
+    network: "client-solutions.fyre.co"
+  };
+  var convConfig = {
+    siteId: '347674',
+    articleId: '<%= @getPageUrlWithHostname() %>',
+    el: 'livefyre',
+    collectionMeta: 'eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IlRpdGxlIDEiLCJ1cmwiOiJodHRwOlwvXC9kZXYubGl2ZWZ5cmUuY29tIiwidGFncyI6InRhZzEsdGFnMiIsImNoZWNrc3VtIjoiY2Q0YTJjYWJkMTIxOTkyM2FjZGJhMjExOWY2NmYwNTUiLCJhcnRpY2xlSWQiOiIxIn0.Dq-ghi9KYmEPmagvCS1NPyYDRMGBujm735QaTRb7E7k',
+    checksum: '6e2e4faf7b95f896260fe695eafb34ba'
+  };
+  Livefyre.require(['fyre.conv#3', 'auth'], function(Conv, auth) {
+    new Conv(networkConfig, [convConfig], function(commentsWidget) {}());
+    auth.delegate({
+      login: function (callback) {
+        callback(null,{livefyre:'<userauthtoken>'});
+      },
+    });
+  });
+})();
+</script>

@@ -5,20 +5,10 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-    <script type="text/javascript">
-        // do not remove this hostname restriction unless you also change the API key below...
-        if (window.location.hostname == 'www.ewal.net') {
-            var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
-
-            // if you clone this app, please change the API key below to your own...
-            analytics.load("83mu6lzb7f");
-        }
-    </script>
-
     <title><%= @getPreparedTitle() %></title>
     <meta name="author" content="<%= @site.author %>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/feed.xml" rel="alternate" title="Ewal.net" type="application/atom+xml">
+    <link href="/feed.xml" rel="alternate" title="Pencil Code Blog" type="application/atom+xml">
     <link rel="icon" sizes="300x300" href="/icon.png">
     <link rel="icon" sizes="196x196" href="/icon-196.png">
     <link rel="icon" sizes="128x128" href="/icon-128.png">
@@ -56,18 +46,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">// <span class="text-primary"><%= @site.title %></span></a>
+            <a class="navbar-brand" href="/"><span class="text-primary"><%= @site.title %></span></a>
         </div>
         <div class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
                 <!--<li><a href="/">Blog</a></li>-->
                 <li><a href="/archives/">Archives</a></li>
-                <li><a href="/projects/">Projects</a></li>
-                <li><a href="/games/"><span class="header-if-wide">Board </span>Games</a></li>
                 <li class="hidden-xs">
                     <a href="/feed.xml" class="rss"><span class="icon icon-feed"></span></a>
-                    <a href="http://twitter.com/ervwalter" class="twitter"><span class="icon icon-twitter"></span></a>
-                    <a href="https://github.com/ervwalter" class="github"><span class="icon icon-github"></span></a>
+                    <a href="https://github.com/PencilCode" class="github"><span class="icon icon-github"></span></a>
                 </li>
             </ul>
             <form class="navbar-form navbar-right hidden-xs" role="search" action="http://google.com/search"
@@ -81,11 +68,6 @@
     </div>
 </div>
 <%- @content %>
-<div class="container">
-    <div class="navbar navbar-footer">
-        <p class="navbar-center navbar-text">Copyright &copy; 2011-2013 Erv Walter</p>
-    </div>
-</div>
 
 <%- @getBlock('scripts').toHTML() %>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -102,5 +84,14 @@
     <% end %>
 <% end %>
 
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-45359764-1', 'pencilcode.net');
+ga('send', 'pageview');
+});
+</script>
 </body>
 </html>
