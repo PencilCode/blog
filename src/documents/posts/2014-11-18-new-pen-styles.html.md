@@ -1,0 +1,72 @@
+---
+layout: post
+title: Pen Line Caps
+date: 2014-11-18 12:00
+comments: true
+tags: drawing
+---
+
+The turtle pen on has had some changes recently.
+There are some new things you may want to try.
+
+The original round turtle pen was great for geometric line
+art: all the round line ends and corners were easy to join up.
+
+But what happens when you want to draw a bar graph?
+
+<pre class="examp">
+jumpto -50, -50
+pen orange, 50
+fd 100
+jumpto 50, -50
+pen red, 50
+fd 50
+</pre>
+
+<script type="demo" height=199>
+demo ->
+  jumpto -50, -50
+  pen orange, 50
+  fd 100
+  label '100'
+  jumpto 50, -50
+  pen red, 50
+  fd 50
+  label '50'
+  moveto 0, 0
+</script>
+
+Although the right red bar (50) should be half the size
+of the left orange bar (100), it's not.  The red bar is
+too big because of the huge circular pen.
+
+The solution is to use a flat pen.  In the
+[CSS standard](http://www.w3.org/TR/2014/CR-2dcontext-20140821/#dom-context-2d-linecap),
+a pen that draws flush flat line ends has a 'butt' lineCap
+(as opposed to 'round' or 'square').  With the turtle
+pen, you can get this by adding 'butt' (in quotes) as another
+argument to the pen function
+
+<pre class="examp">
+jumpto -50, -50
+pen orange, 50, 'butt'
+fd 100
+jumpto 50, -50
+pen red, 50, 'butt'
+fd 50
+</pre>
+
+<script type="demo" height=199>
+demo ->
+  jumpto -50, -50
+  pen orange, 50, 'butt'
+  fd 100
+  label '100'
+  jumpto 50, -50
+  pen red, 50, 'butt'
+  fd 50
+  label '50'
+  moveto 0, 0
+</script>
+
+That's better!
