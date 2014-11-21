@@ -35,11 +35,15 @@ demo ->
 </script>
 
 <code>fill</code> actually works by filling and retracing the path
-that you have drawn with the current pen.  If you happen to have
-used <code>jump</code>, <code>pen up</code>, or <code>pen down</code>,
-it is still the same path, and the discontinuous parts will be filled
-as separate ilands.  If you don't draw the ends of your shapes
-together, fill will not do it for you.
+that you have drawn with the current pen.
+
+- If you happen to use <code>jump</code>, <code>pen up</code>,
+  or <code>pen down</code>, it is still the same path, and the
+  discontinuous parts will be filled as separate islands.
+- But if you switch pen colors or use <code>pen null</code>, it
+  will end the path and start a new one.
+- If you don't draw the ends of your shapes together, fill will
+  not draw the missing sides: it will just color in what you have drawn.
 
 <pre class="examp">
 pen gold, 10
