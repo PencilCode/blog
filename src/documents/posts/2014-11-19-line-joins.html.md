@@ -77,4 +77,4 @@ demo ->
   fill()
 </script>
 
-A triangle should have three points, and now they do!
+Triangles should have three points, and now they do!
