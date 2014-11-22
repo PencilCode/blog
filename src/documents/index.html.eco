@@ -20,7 +20,5 @@ pagePathPrefix: page
     <% if @hasPrevPage(): %>
     <a class="page-nav-newer" href="<%= @getPrevPage() %>">Newer <span class="icon icon-arrow-right-2"></span></a>
     <% end %>
-    <div class="page-nav-archives"><a href="/archives/">- Blog Archives -</a></div>
+    <div class="page-nav-archives"><a href="/archives/">&mdash; Blog Archives &mdash;</a></div>
 </div>
-
-<%- @partial('us') %>

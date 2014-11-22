@@ -6,12 +6,12 @@ comments: true
 tags: drawing
 ---
 
-Sometimes you have a path that cannot be drawn perfectly by tracing out
+Sometimes you have a path that cannot be drawn perfectly by tracing
 one line at time.
 
-Here is an attempt to draw a beveled angle with two lines with 'square'
+The program below tries to draw a 'bevel' angle with 'square'
 line caps.  Since the turtle traces out one line at a time, the angle is not
-a pretty bevel.  Instead, it is a mess of overlapped square line caps.
+a pretty bevel.  It is a mess of overlapped square line caps.
 
 <pre class="examp">
 pen red, 25, 'square', 'bevel'

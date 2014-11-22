@@ -1,0 +1,10 @@
+<% currentMonth = "" %>
+<% for document in @collection.toJSON(): %>
+    <% date = @moment(document.date) %>
+    <% month = date.format("MMM YYYY") %>
+    <% if month isnt currentMonth: %>
+    <div class="sidelist-month"><%= month %></div>
+    <% currentMonth = month %>
+    <% end %>
+    <div class="sidelist-link"><a href="<%= document.url %>"><%= document.title %></a></div>
+<% end %>

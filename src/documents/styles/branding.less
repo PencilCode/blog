@@ -1,0 +1,124 @@
+.shadowcard {
+  box-shadow: 0 0 30px black;
+  background: white;
+}
+.vpadding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.topline {
+  border-top:1px solid #eee;
+}
+.pclogo {
+  text-align: center;
+  text-decoration: inherit;
+  color: inherit;
+  display: block;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 100%;
+  min-width: 135px;
+  max-width: 160px;
+  min-height: 67px;
+  margin: -5px;
+  padding: 5px;
+}
+a.pclogo[href]:hover {
+  background: #def;
+  color: inherit;
+  border-radius: 8px;
+}
+.pctext {
+  display: inline-block;
+  float: right;
+  margin-left: 3px;
+}
+.pcline1 {
+  text-transform: uppercase;
+}
+.pcline2 {
+  text-transform: lowercase;
+  letter-spacing: 14px;
+  margin-right: -14px;
+  padding: 0 1px;
+}
+.blogtitle {
+  display:inline-block;
+  font-size:77px;
+  margin-top:-25px;
+  color:dodgerblue;
+}
+.blogtitle:hover {
+  text-decoration: none;
+}
+.loginblock {
+  display: none;
+  position: absolute;
+  text-align: right;
+  top: 30px;
+  right:8px;
+  border: 3px solid blue;
+  border-radius: 8px;
+  background: white;
+  padding: 8px;
+}
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+.autocomplete-suggestions {
+  border: 1px solid #999;
+  background: #FFF;
+  overflow: auto;
+  cursor: default;
+}
+.autocomplete-suggestion {
+  padding: 2px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.autocomplete-suggestions strong {
+  font-weight: normal;
+  color: dodgerblue;
+}
+.autocomplete-selected, .autocomplete-selected strong {
+  background: dodgerblue;
+  color: white;
+}
+.autocomplete-group {
+  padding: 2px 5px;
+}
+.autocomplete-group strong {
+  display: block;
+  border-bottom: 1px solid #000;
+}
+.loginblock label {
+  display: block;
+  padding: 3px;
+}
+.loginblock button {
+  border:none;
+  background-color:white;
+  -moz-appearance: none !important;
+  box-shadow:0 0 7px gray;
+  color:#222;
+  border-radius:8px;
+  font-family:
+  inherit;font-size:16px;
+  line-height:18px;
+  font-weight:400;
+  vertical-align:middle;
+  height:28px;
+  padding:2px 8px;
+  margin:5px;
+  display:inline-block;
+}
+.loginblock button[disabled],#overlay button[disabled] {
+  box-shadow:0 0 7px darkgray;color:gray;opacity:0.7
+}
+.loginblock button:not([disabled]):hover {
+  box-shadow:0 0 7px black;
+  color: black;
+}
+#msg { color: red }
