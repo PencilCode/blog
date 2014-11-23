@@ -7,8 +7,8 @@ tags: learning, math
 ---
 
 Variables are so fundamental to programming that it is easy
-for an experienced programmer to forget what it really means
-to learn about them.
+for an experienced programmer to forget what it means
+to learn about them for the first time.
 
 ### An easy one
 
@@ -20,16 +20,15 @@ x = 15
 write x * x
 </pre>
 
-No matter how you think about variables, clearly
-<code>x</code> stands for 15, so the program
-writes 15 * 15, which is 225.
+Clearly the first line says <code>x</code> stands for 15,
+so the second line writes 15 * 15, which is 225.
 
 ### A hard one
 
 On the other hand, a typical beginner cannot predict that
-this program writes only perfect squares, even after they
+this program writes only perfect squares, (even after they
 have learned that <code>random [1..10]</code> makes a
-random number from 1 to 10.
+random number from 1 to 10).
 
 <pre class="examp">
 x = random [1..10]
@@ -46,8 +45,9 @@ storing a value in <strong>memory</strong>.
 But if you have never written a program before, your experience
 is that variables are used for <strong>definitions</strong>,
 not memory.  When variables are used in algebra, the
-statement <code>x = y</code> represents a permanent
-timeless definition.  Therefore you might read our program like this:
+statement <code>x = y + 1</code> represents a permanent
+timeless definition.  Therefore you might read our program
+like this:
 
 <ol style="color:red">
 <li><strong>Define</strong> <code>x</code> to mean
