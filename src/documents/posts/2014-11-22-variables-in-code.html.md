@@ -56,6 +56,7 @@ like this:
 <li>Now <code>write x &ast; x</code> means
     <code>write (random [1..10]) &ast; (random [1..10])</code>.
 <li>So it might randomly write something like 3&times;7 = 21.
+    <mark>(nope)</mark>
 </ol>
 
 This is the wrong mental model in most modern
@@ -67,6 +68,7 @@ programming languages.  Here is the way to think about it:
 <li>Now <code>write x * x</code> means to look up the stored value of
    <code>x</code> each time it is needed.
 <li>So it might randomly write something like 8&times;8 = 64.
+    <mark>(yes!)</mark>
 </ol>
 
 Variables are different in code and algebra.
