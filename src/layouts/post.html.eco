@@ -6,10 +6,10 @@ layout: default
     <div class="col-sm-12 col-md-9 col-lg-8">
         <%- @partial('ppost', {title: @document.title, url: @document.url, tags: @document.tags, date: @document.date, content: @content, individualPost: true }) %>
         <%- @partial('livefyre') if @document.comments %>
-        <div class="hidden-md vlineright"></div>
+        <div class="hidden-xs hidden-sm hidden-md vlineright"></div>
     </div>
-    <div class="hidden-ms hidden-md col-lg-1"></div>
-    <div class="hidden-sm col-md-3">
+    <div class="col-lg-1"></div>
+    <div class="col-md-3">
         <%- @partial('sidebar') %>
     </div>
 </div>
