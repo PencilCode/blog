@@ -76,5 +76,5 @@ Variables are different in code and algebra.
 
  - A variable is name for a piece of memory.
  - A program is run in order from top to bottom.
- - Assignments <code>x = value</code> save a value in memory.
+ - Assignments <code>x = value</code> store a value in memory.
  - Referring to a variable looks up the value in memory.
