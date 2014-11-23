@@ -58,8 +58,8 @@ timeless definition.  Therefore you might read our program like this:
 <li>So it might randomly write something like 3&times;7 = 21.
 </ol>
 
-Unfortunately, this is the wrong mental model in modern mainstream
-programming languages.  Here is the way to think about it
+This is the wrong mental model in most modern
+programming languages.  Here is the way to think about it:
 
 <ol style="color:green">
 <li>Calculate <code>random [1..10]</code> and store the answer in
