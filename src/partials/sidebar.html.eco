@@ -1,13 +1,15 @@
 <div id="sidebar">
 <p><a href="http://pencilcode.net/">Pencil Code</a>
-<div class="sidelist-link"><a href="http://bookpencilcode.net/">Book</a></div>
-<div class="sidelist-link"><a href="http://gym.pencilcode.net/">Gym</a></div>
-<div class="sidelist-link"><a href="http://guide.pencilcode.net/">Guide</a></div>
-<div class="sidelist-link"><a href="http://activity.pencilcode.net/">Activities</a></div>
+<div class="sidelist-link"><a href="//book.pencilcode.net/">Book</a></div>
+<div class="sidelist-link"><a href="//blog.pencilcode.net/">Blog</a></div>
+<div class="sidelist-link"><a href="//gym.pencilcode.net/">Gym</a></div>
+<div class="sidelist-link"><a href="//guide.pencilcode.net/">Guide</a></div>
+<div class="sidelist-link"><a href="//group.pencilcode.net/">Group</a></div>
+<div class="sidelist-link"><a href=//activity.pencilcode.net/">Activities</a></div>
 <br>
 
 <p><a href="/archives/">Blog Archives</a>
 
-<%- @partial('side-list', {collection: @getCollection('posts')}) %>
+<%- @partial('small-list', {collection: @getCollection('posts')}) %>
 
 </div>
