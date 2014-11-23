@@ -3,10 +3,12 @@ layout: default
 ---
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 col-md-9 col-lg-8">
+        <div class="col-sm-12 col-md-9 col-lg-8" style="position:relative">
             <%- @content %>
+            <div class="hidden-md vlineright"></div>
         </div>
-        <div class="hidden-sm col-md-3 col-lg-4">
+        <div class="hidden-md col-lg-1"></div>
+        <div class="hidden-sm col-md-3">
             <%- @partial('sidebar') %>
         </div>
     </div>

@@ -1,4 +1,8 @@
-.rounded-corners (@radius: 5px) {
+.container { display: table }
+.container > .row { display: table-row }
+.conainter > .row > div { display: table-cell }
+
+.rounded-corners (@radius: 8px) {
     -webkit-border-radius: @radius;
     -moz-border-radius: @radius;
     -ms-border-radius: @radius;
