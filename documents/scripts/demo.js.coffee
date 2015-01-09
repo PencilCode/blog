@@ -53,11 +53,16 @@ $ ->
                 if (setup.again) setup.again();
                 pause(1);
                 speed(1);
-                how();
-                pause(1);
-                done(function() {
+                if (how.length) {
+                  how(completed);
+                } else {
+                  how()
+                  pause(1);
+                  done(completed);
+                }
+                function completed() {
                   $('body').append('<a style="display:block;position:fixed;right:5px;bottom:5px">click to replay</a>');
-                });
+                };
               }
               go();
               click(function() {
