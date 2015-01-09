@@ -93,6 +93,7 @@ forever -&gt;
 
 <script type="demo" width=99 height=199>
 setup ->
+  stop()
   bk 75
 demo (fin) ->
   v = 0
@@ -128,7 +129,7 @@ forever 1, -&gt;
 <script type="demo">
 setup ->
   stop()
-  move -50, 0
+  move -50, 25
 demo (fin) ->
   setTimeout(fin, 9000)
   forever 1, ->
