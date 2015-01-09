@@ -62,9 +62,9 @@ $ ->
                 }
                 function completed() {
                   $('body').append('<a style="display:block;position:fixed;right:5px;bottom:5px">click to replay</a>');
-                  $('body').on('click', function() {
+                  $(window).on('click', function() {
                     if (!turtle.queue().length) {
-                      $('body').off('click');
+                      $(window).off('click');
                       go();
                     }
                   });
