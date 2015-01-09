@@ -77,17 +77,17 @@ so the second line writes 15 * 15, which is 225.
 
 Inside a `forever` loop, `stop()` will stop the repetitions.
 The following program will run the forever loop, watching for
-the up and down arrow keys.  The up key will increase `v`
-and make the turtle move.  But the down key will stop the
-forever loop.
+the `w` and down `s` keys on the keyboard.  One of them will
+increase `v` and make the turtle move.  The other will stop
+the forever loop.
 
 <pre class="examp">
 v = 0
 forever -&gt;
   fd v
-  if pressed 'up'
-    ++v
-  if pressed 'down'
+  if pressed 'w'
+    v = v + 0.1
+  if pressed 's'
     stop()
 </pre>
 
@@ -98,9 +98,9 @@ demo (fin) ->
   v = 0
   forever ->
     fd v
-    if pressed 'up'
-      ++v
-    if pressed 'down'
+    if pressed 'w'
+      v = v + 0.1
+    if pressed 's'
       stop()
       fin()
 </script>
