@@ -22,22 +22,23 @@ The first change for 2015 is `forever`.
 arrow `-&gt;` after it, then indent code that you want to
 repeat.
 
-<pre class="jumbo">
-forever -&gt;
+<pre class="examp">
+forever -&gt; &nbsp;
   fd 2
   rt 2
 </pre>
 
 <script type="demo">
 setup ->
+  stop()
   move -50, -25
 demo (fin) ->
   forever ->
     fd 3
     rt 2
-    if not turtle.touches window
-      stop()
+    if fin and not turtle.touches window
       fin()
+      fin = null
 </script>
 
 It is useful for making animations.  The previous version
@@ -56,18 +57,17 @@ forever -&gt;
 
 <script type="demo">
 setup ->
+  stop()
   move -50, -25
 demo (fin) ->
   forever ->
     fd 3
     rt 2
-    if not turtle.touches window
-      stop()
   forever ->
     pen random color
-    if not turtle.touches window
-      stop()
+    if fin and not turtle.touches window
       fin()
+      fin = null
 </script>
 
 Clearly the first line says <code>x</code> stands for 15,
@@ -118,11 +118,23 @@ The `forever` function can be set to repeat at any number of
 repetitions per second.  Just add an optional number before
 the arrow:
 
-<pre class="jumbo">
+<pre class="examp">
 forever 1, -&gt;
   dot random color
   rt 30
   fd 25
 </pre>
+
+<script type="demo">
+setup ->
+  stop()
+  move -50, 0
+demo (fin) ->
+  setTimeout(fin, 9000)
+  forever 1, ->
+    dot random color
+    rt 30
+    fd 25
+</script>
 
 The number is the number of repetitions per second.
