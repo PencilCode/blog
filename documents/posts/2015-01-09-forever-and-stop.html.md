@@ -91,8 +91,22 @@ forever -&gt;
     stop()
 </pre>
 
-Notice that `forever` loops are different from `for` and `while`
-loops.  `forever` is a function whose loops are stopped by
+<script type="demo" width=99 height=199>
+setup ->
+  bk 75
+demo (fin) ->
+  v = 0
+  forever ->
+    fd v
+    if pressed 'up'
+      ++v
+    if pressed 'down'
+      stop()
+      fin()
+</script>
+
+`forever` loops are different from `for` and `while` loops.
+`forever` is a function whose loops are stopped by
 calling the function `stop()`.
 
 `for` and `while` are loops that are built-in to the language.  To
