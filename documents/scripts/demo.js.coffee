@@ -61,7 +61,7 @@ $ ->
                   done(completed);
                 }
                 function completed() {
-                  $('body').append('<a style="display:block;position:fixed;right:5px;bottom:5px">click to replay</a>');
+                  $('<a style="display:block;position:fixed;right:5px;bottom:5px">click to replay</a>').appendTo('body').css('mouse', 'default');
                   $(window).on('click', function() {
                     if (!turtle.queue().length) {
                       $(window).off('click');
