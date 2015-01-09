@@ -30,10 +30,10 @@ forever -&gt;
 
 <script type="demo">
 setup ->
-  slide -50
+  move -50, -25
 demo (fin) ->
   forever ->
-    fd 2
+    fd 3
     rt 2
     if not turtle.touches window
       stop()
@@ -56,10 +56,10 @@ forever -&gt;
 
 <script type="demo">
 setup ->
-  slide -50
+  move -50, -25
 demo (fin) ->
   forever ->
-    fd 2
+    fd 3
     rt 2
     if not turtle.touches window
       stop()
