@@ -19,7 +19,7 @@ before then - info@pencilcode.net.
 The first change for 2015 is `forever`.
 
 `forever` lets you repeat something indefinitely.  Put an
-arrow `-&gt;` after it, then indent code that you want to
+arrow `->` after it, then indent code that you want to
 repeat.
 
 <pre class="examp">
