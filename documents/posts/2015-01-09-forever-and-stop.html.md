@@ -28,9 +28,9 @@ forever -&gt;
   rt 2
 </pre>
 
-<script type="demo" height=199>
+<script type="demo">
 setup ->
-  bk 75
+  slide -50
 demo (fin) ->
   forever ->
     fd 2
@@ -53,6 +53,22 @@ forever -&gt;
 forever -&gt;
   pen random color
 </pre>
+
+<script type="demo">
+setup ->
+  slide -50
+demo (fin) ->
+  forever ->
+    fd 2
+    rt 2
+    if not turtle.touches window
+      stop()
+  forever ->
+    pen random color
+    if not turtle.touches window
+      stop()
+      fin()
+</script>
 
 Clearly the first line says <code>x</code> stands for 15,
 so the second line writes 15 * 15, which is 225.
