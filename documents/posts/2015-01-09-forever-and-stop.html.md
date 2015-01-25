@@ -70,8 +70,8 @@ demo (fin) ->
       fin = null
 </script>
 
-Clearly the first line says <code>x</code> stands for 15,
-so the second line writes 15 * 15, which is 225.
+The two processes run in parallel forever, so the
+pen continually changes color as the turtle moves.
 
 ### `stop()` nothing is forever
 
