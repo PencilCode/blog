@@ -50,6 +50,7 @@ docpadConfig = {
       "tag:#{hostname},#{date},#{path}"
 
     fixLinks: (content) ->
+      if not content? then return ''
       baseUrl = @site.url
       regex = /^(http|https|ftp|mailto):/
 
