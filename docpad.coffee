@@ -3,10 +3,12 @@
 
 cheerio = require('cheerio')
 url = require('url')
+path = require('path')
 
 # Define the DocPad Configuration
 docpadConfig = {
   srcPath: ''
+  ignorePaths: [path.join(process.cwd(), 'out')]
   templateData:
     # Specify some site properties
     site:
