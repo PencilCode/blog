@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why "Pencil"?
-date: 2015-06-24 12:00
+date: 2015-07-20 12:00
 comments: true
 tags: gsoc
 ---
@@ -54,7 +54,7 @@ color-coded blocks.  Pencil Code bridges the worlds by allowing
 users to transform their programs between blocks
 and text freely.
 
-Like a Pencil, Pencil Code is designed to be a low-threshold
+Like a pencil, Pencil Code is designed to be a low-threshold
 high-ceiling tool.  Our turtle library is an extension of jQuery,
 a design that is convenient for both beginners and pros.
 We include socket.io, which makes it possible to solve the
@@ -62,7 +62,7 @@ very advanced problem of realtime communications with a very
 beginner-friendly six lines of code.
 
 A lot of work remains to be done to try to match the
-power and simplicity of a Pencil.  This year, contributors
+power and simplicity of a pencil.  This year, contributors
 have created instructional cards and improved ergaonomics
 for beginners; and we are working on adding more advanced
 facilities such as python, libraries like p5, and databases.
