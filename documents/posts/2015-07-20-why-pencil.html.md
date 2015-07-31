@@ -8,14 +8,18 @@ tags: gsoc
 
 Pencil Code gave a popular workshop at the
 [CSTA 2015](http://csta.acm.org/ProfessionalDevelopment/sub/CSTA15/CSTA2015Sessions.pdf)
-conference in Texas.  In an email afterwards, one attendee
+conference in Texas a few days ago.  In an email afterwards, one attendee
 commented "Incredible updates to Pencil Code including an HTML
 web publishing option....  session was packed - there were people
-sitting on the floor!"  We worked with teachers from around the
-country, as well as groups like CodeHS and Codesters who are doing
-really interesting new work.
+sitting on the floor!"
 
-[The presentation is available here.](https://goo.gl/NZvUZA)
+At CSTA we got a chance to work with teachers from around the
+country, as well as groups like CodeHS and Codesters who are
+developing really interesting new tools and educational material.
+
+[Our CSTA presentation is available here.](https://goo.gl/NZvUZA)
+At the session, teachers got to work with Pencil Code hands-on,
+and that presentation includes links to the materials we used.
 
 One question came up: "Why is it called Pencil Code?"
 
