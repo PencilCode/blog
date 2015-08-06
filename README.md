@@ -2,7 +2,20 @@
 
 This is the source for the blog to be hosted at
 [blog.pencilcode.net](http://blog.pencilcode.net).
-It is based on the docpad blog infrastrucure generously
+
+
+To use the first time after cloning the repository, do:
+npm install
+
+Then, to build the site and start a web server:
+npm run devserver
+
+As you make changes, docpad will notice changes and try to rebuild. However, that process
+does not seem to update the front page. If that happens, kill the server (control-C) and
+build and start the server again.
+
+
+This is based on the docpad blog infrastructure generously
 opened for reuse by
 [Erv Walter](http://www.ewal.net/2013/10/08/blogging-with-docpad/).
 
