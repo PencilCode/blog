@@ -79,3 +79,5 @@ weren't sure what to do. We left those alone. We did not change existing uses of
 functions. But if you wanted to, you could switch to the shorter names, and your program will continue to work as it did.
 
 Enjoy the new, expanded set of trig functions, to do even more great things with Pencil Code!
+
+<address>Bob Cassels</address>
