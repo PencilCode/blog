@@ -10,14 +10,14 @@ tags: gsoc
 As we return to school and look around [Pencil Code](//pencilcode.net)
 in preparation for our classes this fall,
 we can see quite a few improvements that were created by
-our Google Summer of Code students.  Let's take a look!
+our Google Summer of Code students.  Let's take a look.
 
 The first thing you see when you log in: icons everywhere!
 But better yet, if you have saved the program recently, the
 icon will be a screenshot of the program's output.  The change
 will help students and teachers quickly identify saved projects,
 and it should help people also find interesting projects they
-want to share.  Pencil Code will be a much more colorful place.
+want to share.
 If you do ever want to switch back to a dense text-only listing
 view, you can just click the grid layout icon in the corner of
 the blue title bar.
@@ -71,8 +71,9 @@ but highly accessible.
 
 <center><img src="/images/gsoc2015/tag-graph.png" style="height:250px;padding:16px;"></center>
 
-Saksham's implementation reflects a few hidden but deep insights: he
-uses a lenient HTML5-compliant parse5 parser, which means that you can
+Saksham's implementation reflects a few subtle but deep insights: he
+uses a lenient HTML5-compliant [parse5](https://github.com/inikulin/parse5)
+parser, which means that you can
 load up an arbitrary piece of unpretty HTML with mismatched tags or
 other problems ("view source" on any web page), and his editor will
 happily display the block structure of the code.
