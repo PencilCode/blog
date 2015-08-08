@@ -8,16 +8,16 @@ tags: gsoc
 
 <img src="/images/gsoc2015/icon-shot.png" style="float:right;margin-left:8px;height:250px">
 As we return to school and look around [Pencil Code](//pencilcode.net)
-this fall,
-you will notice quite a few improvements that were created by
+in preparation for our classes this fall,
+we can see quite a few improvements that were created by
 our Google Summer of Code students.  Let's take a look!
 
-The first thing you'll see when you log in: icons everywhere!
+The first thing you see when you log in: icons everywhere!
 But better yet, if you have saved the program recently, the
 icon will be a screenshot of the program's output.  The change
-will help students and teachers quickly identify old projects,
+will help students and teachers quickly identify saved projects,
 and it should help people also find interesting projects they
-want to share.  And Pencil Code will be a much more colorful place.
+want to share.  Pencil Code will be a much more colorful place.
 If you do ever want to switch back to a dense text-only listing
 view, you can just click the grid layout icon in the corner of
 the blue title bar.
@@ -25,7 +25,7 @@ the blue title bar.
 <img src="/images/gsoc2015/capture-shot.png" style="float:left;margin-right:8px;height:250px">
 The icon implementation was done by Xinan Liu, a student
 at Singapore National University.  He rewrote several bits of
-the pencil code server to supprort the icons, and then on the client
+the Pencil Code server to supprort the icons, and then on the client
 side, he integrated the very cool
 [html2canvas](http://html2canvas.hertzen.com/) library to create
 the screenshots.  If you click the "camera" icon, you can control
