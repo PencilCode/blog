@@ -122,6 +122,15 @@ summer.  They all made improvements that will make a real difference
 as we use Pencil Code to bring computer science to the next generation
 of students.
 
+If you are interested in bringing some of this cool work into your
+classroom, join our discussion group by signing up at
+[teach.pencilcode.net](//teach.pencilcode.net).  We have teachers
+from elementary school to college.  And if you'd like
+to make an open-source contribution, check out
+[ideas.pencilcode.net](//ideas.pencilcode.net) for project ideas,
+and join the teaching discussion group: that is also the area where
+our open source contributors hang out.
+
 We are grateful to Google for supporting the summer open-source program:
 Google's support is valuable not just for the money for the students, but
 because Google is really effective at bringing amazing students
