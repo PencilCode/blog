@@ -7,7 +7,8 @@ tags: gsoc
 ---
 
 <img src="/images/gsoc2015/icon-shot.png" style="float:right;margin-left:8px;height:250px">
-As we return to school and look around Pencil Code this fall,
+As we return to school and look around [Pencil Code](//pencilcode.net)
+this fall,
 you will notice quite a few improvements that were created by
 our Google Summer of Code students.  Let's take a look!
 
@@ -16,7 +17,7 @@ But better yet, if you have saved the program recently, the
 icon will be a screenshot of the program's output.  The change
 will help students and teachers quickly identify old projects,
 and it should help people also find interesting projects they
-want to share.  And Pencil Code will be a much more color place.
+want to share.  And Pencil Code will be a much more colorful place.
 If you do ever want to switch back to a dense text-only listing
 view, you can just click the grid layout icon in the corner of
 the blue title bar.
@@ -25,14 +26,17 @@ the blue title bar.
 The icon implementation was done by Xinan Liu, a student
 at Singapore National University.  He rewrote several bits of
 the pencil code server to supprort the icons, and then on the client
-side, he integrated the very cool html2canvas library to create
+side, he integrated the very cool
+[html2canvas](http://html2canvas.hertzen.com/) library to create
 the screenshots.  If you click the "camera" icon, you can control
 the screenshot that is used for the icon.
 
 This summer, Xinan contributed quite a bit beyond this project.
-He also refactored our node.js-based build to switch from require.js to
-browserify, and he has been contributing to other sharing and scaling features
-on Pencil Code, helping other non-GSoC contributors get up to speed
+He also refactored our [node.js](https://nodejs.org/)-based build to
+switch from [require.js](http://requirejs.org/) to
+[browserify](http://browserify.org/), and he has been contributing
+to other sharing and scaling features on Pencil Code,
+helping other non-GSoC contributors get up to speed
 and reviewing their pull requests.  We're looking forward to Xinan's
 continuing involvement and contributions to our little open-source
 community!
@@ -43,7 +47,9 @@ is something you
 will definitely want to use in your classrooms - but you might not
 notice it at first!  To try it out, create a new project named **.html**
 at the end - like `myfile.html`.  Saskham has implemented an HTML
-block mode for the Droplet block editor, which means that you can
+block mode for the
+[Droplet block editor](https://github.com/droplet-editor/droplet),
+which means that you can
 instroduce beginners to HTML syntax using a drag-and-drop interface.
 And as usual with Droplet, you can toggle between blocks and text
 at any time.  Saksham is also working on a similar Droplet-based
@@ -74,8 +80,8 @@ And his palette choices reflect an analysis he did by
 analyzing a crawl of of real-world use of HTML tags on the web:
 obscure rarely-used tags like `<tbody>` don't take up room in
 the palette - space is given to tags that are really used in practice.
-In working with Droplet, Saksham has added several core improvements
-such as "plus" buttons and multi-drop regions.
+Read a
+[paper about Saksham's work here](https://github.com/dabbler0/htmldropletpaper/blob/master/htmldroplet.pdf).
 
 <img src="/images/gsoc2015/debugger-shot.png" style="float:right;margin-left:8px;height:300px">
 The final project was a collaboration between GSoC student
