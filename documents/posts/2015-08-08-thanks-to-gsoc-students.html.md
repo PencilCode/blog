@@ -39,7 +39,7 @@ to other sharing and scaling features on Pencil Code,
 helping other non-GSoC contributors get up to speed
 and reviewing their pull requests.  We're looking forward to Xinan's
 continuing involvement and contributions to our little open-source
-community!
+community.
 
 <img src="/images/gsoc2015/html-shot.png" style="float:right;margin-left:8px;height:200px">
 The next amazing contribution, by IIIT Hyderabad student Saksham Aggarwal,
