@@ -114,7 +114,7 @@ calls at every line.  For examples of how it transforms code, you
 can check out <a href="/papers/visualizing_debugging_preprint.pdf">Jeremy
 and Amanda and Cali's writeup</a> of their debugging work.
 
-Did I mention that the thee of the are students?  And they
+Did I mention that the three of them are students?  And they
 built this rewindable debugger over one summer?
 
 As you can see - our students contributed incredible projects this
