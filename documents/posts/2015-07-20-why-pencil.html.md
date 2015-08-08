@@ -75,3 +75,5 @@ We have an online Slack group where contributors and edcuators
 gather.  If you would like to use Pencil Code in your classroom
 or contribute to the open-source project, please join us, and
 add your name at [teach.pencilcode.net](http://teach.pencilcode.net/).
+
+<address>David Bau</address>

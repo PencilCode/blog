@@ -97,3 +97,5 @@ those uses. For now we have left uses of `ln` and `log10` intact. We will change
 be the logarithm function, instead of the debugging function.
 
 Enjoy the new, expanded set of math functions, to do even more great things with Pencil Code!
+
+<address>Bob Cassels</address>
